@@ -132,6 +132,7 @@ struct CategoryButton: View {
                 .padding(10)
                 .frame(minWidth: 120)
                 .foregroundColor(.white)
+            
              //   .background(isSelected ? Color(hex: "#4F6485").opacity(0.8) : Color(hex: "#4F6485"))
                 .cornerRadius(40)
         }
