@@ -16,6 +16,7 @@
 		2BB650332CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650322CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift */; };
 		2BB650402CB3CA1E00BF1578 /* page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6503F2CB3CA1E00BF1578 /* page2.swift */; };
 		2BB650422CB3CA6E00BF1578 /* page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650412CB3CA6E00BF1578 /* page4.swift */; };
+		EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6194F12CB3D66600109D67 /* Page1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		2BB650322CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2BB6503F2CB3CA1E00BF1578 /* page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page2.swift; sourceTree = "<group>"; };
 		2BB650412CB3CA6E00BF1578 /* page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page4.swift; sourceTree = "<group>"; };
+		EF6194F12CB3D66600109D67 /* Page1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				2BB650152CB3C9F000BF1578 /* repo2App.swift */,
 				2BB6503F2CB3CA1E00BF1578 /* page2.swift */,
 				2BB650172CB3C9F000BF1578 /* ContentView.swift */,
+				EF6194F12CB3D66600109D67 /* Page1View.swift */,
 				2BB650412CB3CA6E00BF1578 /* page4.swift */,
 				2BB650192CB3C9F100BF1578 /* Assets.xcassets */,
 				2BB6501B2CB3C9F100BF1578 /* Preview Content */,
@@ -265,6 +268,7 @@
 			files = (
 				2BB650182CB3C9F000BF1578 /* ContentView.swift in Sources */,
 				2BB650162CB3C9F000BF1578 /* repo2App.swift in Sources */,
+				EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */,
 				2BB650402CB3CA1E00BF1578 /* page2.swift in Sources */,
 				2BB650422CB3CA6E00BF1578 /* page4.swift in Sources */,
 			);
