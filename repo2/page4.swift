@@ -23,7 +23,7 @@ struct page4: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 12) {
                         // Category buttons with actions
-                        CategoryButton(title: "قصائد صبر", action: {
+                        CustomCategoryButton(title: "قصائد صبر", action: {
                             print("قصائد صبر button clicked")
                         })
                         .id(4)  // "قصائد صبر" button
