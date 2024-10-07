@@ -250,4 +250,3 @@ struct page3: View {
     page3()
 }
 
-
