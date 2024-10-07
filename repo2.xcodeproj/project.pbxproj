@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291DDC5E2CB3DEA500C3039C /* page9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DDC5D2CB3DEA500C3039C /* page9.swift */; };
 		2BB650162CB3C9F000BF1578 /* repo2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650152CB3C9F000BF1578 /* repo2App.swift */; };
 		2BB650182CB3C9F000BF1578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650172CB3C9F000BF1578 /* ContentView.swift */; };
 		2BB6501A2CB3C9F100BF1578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB650192CB3C9F100BF1578 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		291DDC5D2CB3DEA500C3039C /* page9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page9.swift; sourceTree = "<group>"; };
 		2BB650122CB3C9F000BF1578 /* repo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = repo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB650152CB3C9F000BF1578 /* repo2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2App.swift; sourceTree = "<group>"; };
 		2BB650172CB3C9F000BF1578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		2BB650142CB3C9F000BF1578 /* repo2 */ = {
 			isa = PBXGroup;
 			children = (
+				291DDC5D2CB3DEA500C3039C /* page9.swift */,
 				2BB650152CB3C9F000BF1578 /* repo2App.swift */,
 				2BB6503F2CB3CA1E00BF1578 /* page2.swift */,
 				2BB650172CB3C9F000BF1578 /* ContentView.swift */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB650182CB3C9F000BF1578 /* ContentView.swift in Sources */,
+				291DDC5E2CB3DEA500C3039C /* page9.swift in Sources */,
 				2BB650162CB3C9F000BF1578 /* repo2App.swift in Sources */,
 				EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */,
 				2BB650402CB3CA1E00BF1578 /* page2.swift in Sources */,
