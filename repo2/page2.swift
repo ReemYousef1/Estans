@@ -21,8 +21,7 @@ struct page2: View {
                 
                 // Welcome message with dynamic name input
                 if !userName.isEmpty {
-                    Text("مرحبًا \(userName) ...")لا
-                        .font(.largeTitle)
+                    Text("مرحبًا \(userName) ...")                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                 } else {
@@ -52,8 +51,8 @@ struct page2: View {
                         HStack(spacing: 15) {
                             ForEach(row, id: \.self) { category in
                                 CategoryButton(
-                                    title: category,
-                                    isSelected: selectedCategories.contains(category)
+                                    title: category
+                                   // isSelected: selectedCategories.contains(category)
                                 ) {
                                     toggleCategory(category)
                                 }
@@ -121,7 +120,7 @@ struct BackgroundView: View {
 
 struct CategoryButton: View {
     var title: String
-    var isSelected: Bool
+   // var isSelected: Bool
     var action: () -> Void
     
     var body: some View {
@@ -133,37 +132,37 @@ struct CategoryButton: View {
                 .padding(10)
                 .frame(minWidth: 120)
                 .foregroundColor(.white)
-                .background(isSelected ? Color(hex: "#4F6485").opacity(0.8) : Color(hex: "#4F6485"))
+             //   .background(isSelected ? Color(hex: "#4F6485").opacity(0.8) : Color(hex: "#4F6485"))
                 .cornerRadius(40)
         }
     }
 }
-
-extension Color {
-    init(hex: String) {
-        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
-        var int: UInt64 = 0
-        Scanner(string: hex).scanHexInt64(&int)
-        let a, r, g, b: UInt64
-        switch hex.count {
-        case 3:
-            (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6:
-            (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8:
-            (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-        default:
-            (a, r, g, b) = (255, 0, 0, 0)
-        }
-        self.init(
-            .sRGB,
-            red: Double(r) / 255,
-            green: Double(g) / 255,
-            blue: Double(b) / 255,
-            opacity: Double(a) / 255
-        )
-    }
-}
+//
+//extension Color {
+//    init(hex: String) {
+//        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+//        var int: UInt64 = 0
+//        Scanner(string: hex).scanHexInt64(&int)
+//        let a, r, g, b: UInt64
+//        switch hex.count {
+//        case 3:
+//            (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
+//        case 6:
+//            (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
+//        case 8:
+//            (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
+//        default:
+//            (a, r, g, b) = (255, 0, 0, 0)
+//        }
+//        self.init(
+//            .sRGB,
+//            red: Double(r) / 255,
+//            green: Double(g) / 255,
+//            blue: Double(b) / 255,
+//            opacity: Double(a) / 255
+//        )
+//    }
+//}
 //
 //struct ContentView_Previews: PreviewProvider {
 //    static var previews: some View {

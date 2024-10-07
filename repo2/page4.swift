@@ -176,49 +176,49 @@ struct page4: View {
     }
 }
 
-struct BackgroundView: View {
-    var body: some View {
-        ZStack {
-            Circle()
-                .fill(Color(hex: "#C7BABA").opacity(0.5))
-                .frame(width: 300, height: 300)
-                .offset(x: -150, y: -200)
-                .blur(radius: 30)
-                .position(x: 60, y: 75)
-
-            Circle()
-                .fill(Color(hex: "#E2DAD6").opacity(0.3))
-                .frame(width: 200, height: 200)
-                .offset(x: 150, y: 100)
-                .blur(radius: 30)
-
-            Circle()
-                .fill(Color(hex: "#0F2C59").opacity(0.4))
-                .frame(width: 280, height: 250)
-                .offset(x: 100, y: -150)
-                .blur(radius: 60)
-        }
-    }
-}
-
-struct CategoryButton: View {
-    var title: String
-    var action: () -> Void  // Action for the button
-    
-    var body: some View {
-        Button(action: {
-            action()  // Perform the action when the button is tapped
-        }) {
-            Text(title)
-                .font(.system(size: 16))
-                .padding(.vertical, 8)
-                .padding(.horizontal, 15)
-                .background(Color(hex: "#E2DAD6"))
-                .cornerRadius(20)
-                .foregroundColor(.black)  // Text color for the button
-        }
-    }
-}
+//struct BackgroundView: View {
+//    var body: some View {
+//        ZStack {
+//            Circle()
+//                .fill(Color(hex: "#C7BABA").opacity(0.5))
+//                .frame(width: 300, height: 300)
+//                .offset(x: -150, y: -200)
+//                .blur(radius: 30)
+//                .position(x: 60, y: 75)
+//
+//            Circle()
+//                .fill(Color(hex: "#E2DAD6").opacity(0.3))
+//                .frame(width: 200, height: 200)
+//                .offset(x: 150, y: 100)
+//                .blur(radius: 30)
+//
+//            Circle()
+//                .fill(Color(hex: "#0F2C59").opacity(0.4))
+//                .frame(width: 280, height: 250)
+//                .offset(x: 100, y: -150)
+//                .blur(radius: 60)
+//        }
+//    }
+//}
+//
+//struct CategoryButton: View {
+//    var title: String
+//    var action: () -> Void  // Action for the button
+//    
+//    var body: some View {
+//        Button(action: {
+//            action()  // Perform the action when the button is tapped
+//        }) {
+//            Text(title)
+//                .font(.system(size: 16))
+//                .padding(.vertical, 8)
+//                .padding(.horizontal, 15)
+//                .background(Color(hex: "#E2DAD6"))
+//                .cornerRadius(20)
+//                .foregroundColor(.black)  // Text color for the button
+//        }
+//    }
+//}
 struct PoemView: View {
     var title: String
     var excerpt: String
