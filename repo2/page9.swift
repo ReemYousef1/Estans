@@ -155,9 +155,3 @@ struct page9: View {
         }
     }
 }
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        page9()
-//    }
-//}

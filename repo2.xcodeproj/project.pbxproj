@@ -20,6 +20,7 @@
 		EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6194F12CB3D66600109D67 /* Page1View.swift */; };
 		EF86EFC22CB4346E001884D7 /* page7.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86EFC12CB4346E001884D7 /* page7.swift */; };
 		EF86EFC42CB43C46001884D7 /* page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86EFC32CB43C46001884D7 /* page3.swift */; };
+		EF86EFC62CB51136001884D7 /* pre.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86EFC52CB51136001884D7 /* pre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		EF6194F12CB3D66600109D67 /* Page1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1View.swift; sourceTree = "<group>"; };
 		EF86EFC12CB4346E001884D7 /* page7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page7.swift; sourceTree = "<group>"; tabWidth = 16; };
 		EF86EFC32CB43C46001884D7 /* page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page3.swift; sourceTree = "<group>"; };
+		EF86EFC52CB51136001884D7 /* pre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				291DDC5D2CB3DEA500C3039C /* page9.swift */,
 				2BB650152CB3C9F000BF1578 /* repo2App.swift */,
+				EF86EFC52CB51136001884D7 /* pre.swift */,
 				2BB6503F2CB3CA1E00BF1578 /* page2.swift */,
 				EF86EFC32CB43C46001884D7 /* page3.swift */,
 				2BB650172CB3C9F000BF1578 /* ContentView.swift */,
@@ -280,6 +283,7 @@
 				2BB650162CB3C9F000BF1578 /* repo2App.swift in Sources */,
 				EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */,
 				2BB650402CB3CA1E00BF1578 /* page2.swift in Sources */,
+				EF86EFC62CB51136001884D7 /* pre.swift in Sources */,
 				EF86EFC22CB4346E001884D7 /* page7.swift in Sources */,
 				EF86EFC42CB43C46001884D7 /* page3.swift in Sources */,
 				2BB650422CB3CA6E00BF1578 /* page4.swift in Sources */,

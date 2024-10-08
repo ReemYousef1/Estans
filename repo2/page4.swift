@@ -285,8 +285,8 @@ extension Color {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        page4()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        page4()
+//    }
+//}

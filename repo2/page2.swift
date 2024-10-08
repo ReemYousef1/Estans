@@ -125,6 +125,7 @@ struct CategoryButtonn: View {
     var action: () -> Void
     
     var body: some View {
+    
         Button(action: {
             action()
         }) {
@@ -136,9 +137,11 @@ struct CategoryButtonn: View {
                 .background(isSelected ? Color(hex: "#4F6485").opacity(0.8) : Color(hex: "#4F6485"))
                 .cornerRadius(40)
         }
+        //.navigationTitle("page 2") 
     }
+    
 }
-
+   
 #Preview {
     page2()
 }
