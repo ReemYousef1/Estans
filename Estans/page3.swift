@@ -249,7 +249,8 @@ struct page3: View {
                             }) {
                                 Image(systemName: "house.fill")
                                     .foregroundColor(.white)
-                                    .padding()
+                                    .padding(.top, -7.0)
+                                    .frame(width: 40.0, height: 40.0)
                             }
                             Spacer()
                             
@@ -258,7 +259,9 @@ struct page3: View {
                                 
                                 Image(systemName: "heart")
                                     .foregroundColor(.white)
-                                    .padding()
+                                    .padding(.top, -3.0)
+                                    .frame(width: 40.0, height: 40.0)
+                                
                                 
                             }
                             //                            Button(action: {
@@ -274,17 +277,19 @@ struct page3: View {
                             NavigationLink{page5()}label: {
                                 Image(systemName: "note.text")
                                     .foregroundColor(.white)
-                                    .padding()
+                                    .padding(.top, -3.0)
+                                    .frame(width: 40.0, height: 40.0)
                             }
                             
                             Spacer()
                         }
                         .padding()
                         .background(
-                            RoundedRectangle(cornerRadius: 55)
-                                .fill(Color(red: 42/255, green: 59/255, blue: 89/255))
-                        )
-                        .frame(width: 370, height: 50)
+                            RoundedRectangle(
+                              cornerRadius: 55)
+                                .fill(Color(red: 42/255, green: 59/255, blue: 89/255))                        )
+                        .frame(width: 340, height: 80.0)
+                        .offset(y: -40)
                     }
                 }
                 

@@ -155,7 +155,8 @@ struct page4: View {
                                           }
                                           .padding(.top, 13.0)
                                           .background(
-                                              RoundedRectangle(cornerRadius: 55)
+                                              RoundedRectangle(
+                                                cornerRadius: 55)
                                                   .fill(Color(red: 42/255, green: 59/255, blue: 89/255))
                                                   
                                           )
