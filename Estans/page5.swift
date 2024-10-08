@@ -82,8 +82,9 @@ struct page5: View {
                         HStack{
                             //button
                             NavigationLink{page9()}label: {
-                              Text("اقرا المزيد")
-                            }
+                              Text("اقرأ المزيد")
+                            }     .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                            
 //                            Button("اقرا المزيد"){
 //                                
 //                                
@@ -133,9 +134,10 @@ struct page5: View {
                         //HStack of 2ndrectangle
                         HStack{
                             //button of 2nd rectangle
-                            Button("اقرا المزيد"){
+                            Button("اقرأ المزيد"){
                                 
-                            }
+                            }     .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                            
                             
                             
                             
@@ -184,9 +186,10 @@ struct page5: View {
                         //HStack of 3rd rectangle
                         HStack{
                             //button of 3rd rectangle
-                            Button("اقزا المزيد"){
+                            Button("اقرأ المزيد"){
                                 
-                            }
+                            }      .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                            
                             //VStack of text of 2nd rectangle
                             VStack{
                                 Text("رَأْيتُ القَنْاعةَ")
@@ -222,9 +225,11 @@ struct page5: View {
                         //HStack of 4th rectangle
                         HStack{
                             //button of 4th rectangle
-                            Button("اقزا المزيد"){
+                            Button("اقرأ المزيد"){
                                 
-                            }//end of button of 4th rectangle
+                            }
+                            .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                            //end of button of 4th rectangle
                             
                             //VStack of text of 4th rectangle
                             VStack{
