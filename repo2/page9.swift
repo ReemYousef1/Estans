@@ -10,8 +10,7 @@ import SwiftUI
 struct page9: View {
     var body: some View {
         @State var notetext = ""
-        NavigationView {
-            VStack(spacing: 30) {
+                    VStack(spacing: 30) {
                 ZStack {
                     Rectangle()
                         .fill(Color(red: 226/255, green: 218/255, blue: 214/255)).opacity(0.1)
@@ -108,27 +107,21 @@ struct page9: View {
                 // الشريط السفلي
                 HStack {
                     Spacer()
-                    Button(action: {
-                    
-                    }) {
+                    NavigationLink{page3()}label:{
                         Image(systemName: "house.fill")
                             .foregroundColor(.white)
                             .padding()
                     }
                     Spacer()
 
-                    Button(action: {
-                        
-                    }) {
+                    NavigationLink{page5()}label:{
                         Image(systemName: "heart")
                             .foregroundColor(.white)
                             .padding()
                     }
                     Spacer()
 
-                    Button(action: {
-                    
-                    }) {
+                    NavigationLink{page6()}label:{
                         Image(systemName: "note.text")
                             .foregroundColor(.white)
                             .padding()
@@ -142,16 +135,16 @@ struct page9: View {
                 )
                 .frame(width: 370, height: 50)
             }
-            .navigationTitle("قصيدة المطر")
+            //.navigationTitle("قصيدة المطر")
             .navigationBarItems(leading: Button(action: {
                 print("Back button tapped")
             }) {
                 HStack {
-                    Image(systemName: "chevron.backward")
+                   // Image(systemName: "chevron.backward")
                 }
                 .foregroundColor(.blue)
             })
             .padding()
         }
     }
-}
+

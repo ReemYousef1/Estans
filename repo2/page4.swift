@@ -126,9 +126,7 @@ struct page4: View {
                                       VStack {
                                           HStack {
                                               Spacer()
-                                              Button(action: {
-                                               
-                                              }) {
+                                              NavigationLink{page3()}label:{
                                                   Image(systemName: "house.fill")
                                                       .aspectRatio(contentMode: .fill)
                                                       .foregroundColor(Color(hue: 1.0, saturation: 0.015, brightness: 1.0, opacity: 0.789))
@@ -138,9 +136,7 @@ struct page4: View {
                                               Spacer()
 
                                    
-                                              Button(action: {
-               
-                                              }) {
+                                              NavigationLink{page5()}label:{
                                                   Image(systemName: "heart")
                                                       .foregroundColor(Color(hue: 1.0, saturation: 0.015, brightness: 1.0, opacity: 0.789))                                          .padding(.top, -13.0)
                                                       .padding()
@@ -149,9 +145,7 @@ struct page4: View {
                                               Spacer()
 
                        
-                                              Button(action: {
-                                           
-                                              }) {
+                                              NavigationLink{page6()}label:{
                                                   Image(systemName: "note.text")
                                                       .foregroundColor(Color(hue: 1.0, saturation: 0.015, brightness: 1.0, opacity: 0.789))
                                                       .padding(.top, -13.0)

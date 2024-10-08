@@ -15,8 +15,10 @@
 		2BB650272CB3C9F100BF1578 /* repo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650262CB3C9F100BF1578 /* repo2Tests.swift */; };
 		2BB650312CB3C9F100BF1578 /* repo2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650302CB3C9F100BF1578 /* repo2UITests.swift */; };
 		2BB650332CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650322CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift */; };
-		2BB650402CB3CA1E00BF1578 /* page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6503F2CB3CA1E00BF1578 /* page2.swift */; };
 		2BB650422CB3CA6E00BF1578 /* page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB650412CB3CA6E00BF1578 /* page4.swift */; };
+		BFB59A502CB51BB300229F7C /* page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB59A4F2CB51BB300229F7C /* page5.swift */; };
+		BFB59A522CB51E3B00229F7C /* page6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB59A512CB51E3B00229F7C /* page6.swift */; };
+		BFB59A542CB5220C00229F7C /* page7edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB59A532CB5220C00229F7C /* page7edit.swift */; };
 		EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6194F12CB3D66600109D67 /* Page1View.swift */; };
 		EF86EFC22CB4346E001884D7 /* page7.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86EFC12CB4346E001884D7 /* page7.swift */; };
 		EF86EFC42CB43C46001884D7 /* page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86EFC32CB43C46001884D7 /* page3.swift */; };
@@ -52,8 +54,10 @@
 		2BB6502C2CB3C9F100BF1578 /* repo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = repo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB650302CB3C9F100BF1578 /* repo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2UITests.swift; sourceTree = "<group>"; };
 		2BB650322CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2BB6503F2CB3CA1E00BF1578 /* page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page2.swift; sourceTree = "<group>"; };
 		2BB650412CB3CA6E00BF1578 /* page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page4.swift; sourceTree = "<group>"; };
+		BFB59A4F2CB51BB300229F7C /* page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page5.swift; sourceTree = "<group>"; };
+		BFB59A512CB51E3B00229F7C /* page6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page6.swift; sourceTree = "<group>"; };
+		BFB59A532CB5220C00229F7C /* page7edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page7edit.swift; sourceTree = "<group>"; };
 		EF6194F12CB3D66600109D67 /* Page1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1View.swift; sourceTree = "<group>"; };
 		EF86EFC12CB4346E001884D7 /* page7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page7.swift; sourceTree = "<group>"; tabWidth = 16; };
 		EF86EFC32CB43C46001884D7 /* page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page3.swift; sourceTree = "<group>"; };
@@ -111,11 +115,13 @@
 				291DDC5D2CB3DEA500C3039C /* page9.swift */,
 				2BB650152CB3C9F000BF1578 /* repo2App.swift */,
 				EF86EFC52CB51136001884D7 /* pre.swift */,
-				2BB6503F2CB3CA1E00BF1578 /* page2.swift */,
 				EF86EFC32CB43C46001884D7 /* page3.swift */,
+				BFB59A512CB51E3B00229F7C /* page6.swift */,
 				2BB650172CB3C9F000BF1578 /* ContentView.swift */,
 				EF6194F12CB3D66600109D67 /* Page1View.swift */,
+				BFB59A4F2CB51BB300229F7C /* page5.swift */,
 				EF86EFC12CB4346E001884D7 /* page7.swift */,
+				BFB59A532CB5220C00229F7C /* page7edit.swift */,
 				2BB650412CB3CA6E00BF1578 /* page4.swift */,
 				2BB650192CB3C9F100BF1578 /* Assets.xcassets */,
 				2BB6501B2CB3C9F100BF1578 /* Preview Content */,
@@ -282,9 +288,11 @@
 				291DDC5E2CB3DEA500C3039C /* page9.swift in Sources */,
 				2BB650162CB3C9F000BF1578 /* repo2App.swift in Sources */,
 				EF6194F22CB3D66600109D67 /* Page1View.swift in Sources */,
-				2BB650402CB3CA1E00BF1578 /* page2.swift in Sources */,
+				BFB59A522CB51E3B00229F7C /* page6.swift in Sources */,
 				EF86EFC62CB51136001884D7 /* pre.swift in Sources */,
+				BFB59A502CB51BB300229F7C /* page5.swift in Sources */,
 				EF86EFC22CB4346E001884D7 /* page7.swift in Sources */,
+				BFB59A542CB5220C00229F7C /* page7edit.swift in Sources */,
 				EF86EFC42CB43C46001884D7 /* page3.swift in Sources */,
 				2BB650422CB3CA6E00BF1578 /* page4.swift in Sources */,
 			);
