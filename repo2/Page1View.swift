@@ -41,7 +41,7 @@ struct Page1View: View {
                         .padding(.bottom,80)
                     
                         NavigationLink{
-                            pre()
+                            Page2()
                         }label:{
                             
                             //zstack
