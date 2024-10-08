@@ -39,7 +39,8 @@ struct page5: View {
                         
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color(red: 226/255, green: 218/255, blue: 214/255))
-                            .frame(width: 272, height: 36)
+                            .frame(width: 272, height: 40.0)
+                        
                         //   .position(x: 200, y: 50)
                             .padding(.top,-50)
                             .padding(.leading,70)

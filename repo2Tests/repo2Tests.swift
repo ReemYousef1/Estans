@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import repo2
+@testable import Estans
 
 final class repo2Tests: XCTestCase {
 
