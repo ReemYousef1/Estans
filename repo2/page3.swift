@@ -90,6 +90,7 @@ struct page3: View {
                     .padding(.bottom,20)
                     VStack{
                         Text("التصنيفات")
+                            .fontWeight(.semibold)
                             .padding(.leading, 260)
                             .padding(.bottom,15)
                             .font(.system(size: 15))
@@ -134,7 +135,9 @@ struct page3: View {
                             }
                         }
                         // .padding(.bottom,50)
-                        
+                        Text("  ")
+                            .frame(width: 1.0, height: 13.0)
+
                             HStack{
                                 NavigationLink{page4()}label: {
                                     Text("أظهار الكل")
@@ -164,7 +167,9 @@ struct page3: View {
 //                            
 //                            
 //                        }
-                        
+                        Text("  ")
+                            .frame(width: 1.0, height: 4.0)
+
                         ZStack{
                             
                             RoundedRectangle(cornerRadius: 30) // Set the corner radius here
@@ -180,9 +185,12 @@ struct page3: View {
                             }
                             
                         }
-                        
+                        Text("  ")
+                            .frame(width: 1.0, height: 1.0)
+
                         Text("الشعراء")
-                            .padding(.leading, 260)
+                            .fontWeight(.semibold)
+                            .padding(.leading, 267.0)
                             .font(.system(size: 15))
                     }
                     
