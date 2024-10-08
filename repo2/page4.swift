@@ -241,6 +241,7 @@ struct PoemView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
         }
         .padding()
+        .frame(width: 380.0)
         .background(Color(hex: "#4E6384")) // Background color for the PoemView
         .cornerRadius(25) // Rounded corners
         .shadow(radius: 1) // Shadow effect
@@ -277,6 +278,10 @@ extension Color {
         let b = Double(rgb & 0xFF) / 255.0
         self.init(red: r, green: g, blue: b)
     }
+}
+
+#Preview {
+ page4()
 }
 
 //struct ContentView_Previews: PreviewProvider {
