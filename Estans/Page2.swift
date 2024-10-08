@@ -79,9 +79,9 @@ struct Page2: View {
                     .padding(.horizontal)
                 }
                 .padding()
-            }
+            }}
             .edgesIgnoringSafeArea(.all) // Extend background to edges
-        } }
+        }
     
     // Toggle the selection of a category
     private func toggleCategory(_ category: String) {

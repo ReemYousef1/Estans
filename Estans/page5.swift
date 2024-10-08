@@ -256,9 +256,11 @@ struct page5: View {
                     //Spacer(minLength: 0)
                     //ZStack again
                     ZStack{
-                        RoundedRectangle(cornerRadius: 32)
+                        RoundedRectangle(cornerRadius: 46)
                             .fill(Color(red: 42/255, green: 59/255, blue: 85/255))
-                            .frame(width: 372,height: 73)
+                            .frame(width: 372,height: 58.0)
+                            .padding(.bottom, 32.0)
+
                         // .position(<#T##position: CGPoint##CGPoint#>)
                         // .position(x: 50, y: 50)
                         // .padding(.bottom,100)
@@ -275,7 +277,8 @@ struct page5: View {
                                     
                                     Image(systemName: "house.fill")
                                         .foregroundColor(.white)
-                                        .padding()
+                                        .padding(.bottom, 16.0)
+                                        .frame(width: 50.0, height: 50.0)
                                     
                                 }
                                 Spacer()
@@ -284,26 +287,37 @@ struct page5: View {
                                 Button(action: {
                                     
                                 }) {
-                                    Image(systemName: "heart").imageScale(.large)
+                                    Image(systemName: "heart")
+                                        .frame(width: 50.0, height: 40.0)
+                                        .imageScale(.large)
                                         .foregroundColor(.white)
-                                        .padding()
+                                        .padding(.bottom, 14.0)
                                 }
                                 Spacer()
                                 
                                 
                                 NavigationLink{page6()}label:{
-                                    Image(systemName: "note.text").imageScale(.large)
+                                    Image(systemName: "note.text")
+                                        .frame(width: 50.0, height: 50.0)
+                                        .imageScale(.large)
                                         .foregroundColor(.white)
-                                    .padding()}
+                                    .padding(.bottom, 15.0)}
                                 
                                 Spacer()
                             }
                             .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 55)
-                                    .fill(Color(red: 42/255, green: 59/255, blue: 89/255))
-                            )
-                            .frame(width: 370, height: 50)
+//                            .background(
+//                                RoundedRectangle(
+//                                  cornerRadius: 55)
+//                                    .fill(Color(red: 42/255, green: 59/255, blue: 89/255))
+//                                    
+//                            )
+//                            
+                            .frame(width: 320, height: 80)
+                
+.padding(.horizontal)
+.padding(.bottom, 10)
+
                             
                             
                             

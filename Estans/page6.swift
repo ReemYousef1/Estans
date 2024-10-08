@@ -81,7 +81,9 @@ struct page6: View {
                         HStack{
                             //button
                             NavigationLink{page9()}label: {
-                              Text("اقرا المزيد")
+                                Text("اقرأ المزيد")
+                                    .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                                    
                             }
 //                            Button("اقرا المزيد"){
 //
@@ -132,11 +134,10 @@ struct page6: View {
                         //HStack of 2ndrectangle
                         HStack{
                             //button of 2nd rectangle
-                            Button("اقرا المزيد"){
+                            Button("اقرأ المزيد"){
                                 
                             }
-                            
-                            
+                            .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
                             
                             //VStack of text of 2nd rectangle
                             VStack{
@@ -183,9 +184,11 @@ struct page6: View {
                         //HStack of 3rd rectangle
                         HStack{
                             //button of 3rd rectangle
-                            Button("اقزا المزيد"){
+                            Button("اقرأ المزيد"){
                                 
                             }
+                            .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                            
                             //VStack of text of 2nd rectangle
                             VStack{
                                 Text("رَأْيتُ القَنْاعةَ")
@@ -221,9 +224,11 @@ struct page6: View {
                         //HStack of 4th rectangle
                         HStack{
                             //button of 4th rectangle
-                            Button("اقزا المزيد"){
+                            Button("اقرأ المزيد"){
                                 
-                            }//end of button of 4th rectangle
+                            }
+                            .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                            //end of button of 4th rectangle
                             
                             //VStack of text of 4th rectangle
                             VStack{
@@ -255,9 +260,10 @@ struct page6: View {
                     //Spacer(minLength: 0)
                     //ZStack again
                     ZStack{
-                        RoundedRectangle(cornerRadius: 32)
+                        RoundedRectangle(cornerRadius: 49)
                             .fill(Color(red: 42/255, green: 59/255, blue: 85/255))
                             .frame(width: 372,height: 73)
+                            .padding(.bottom,150.0)
                         // .position(<#T##position: CGPoint##CGPoint#>)
                         // .position(x: 50, y: 50)
                         // .padding(.bottom,100)
@@ -274,16 +280,19 @@ struct page6: View {
                                     
                                     Image(systemName: "house.fill")
                                         .foregroundColor(.white)
-                                        .padding()
+                                        .padding(.bottom, 150.0)
+                                        .frame(width: 50.0, height: 50.0)
                                     
                                 }
                                 Spacer()
                                 
                                 
                                 NavigationLink{page5()}label: {
-                                    Image(systemName: "heart").imageScale(.large)
+                                    Image(systemName: "heart")
+                                        .frame(width: 50.0, height: 50.0)
+                                        .imageScale(.large)
                                         .foregroundColor(.white)
-                                        .padding()
+                                        .padding(.bottom, 150.0)
                                 }
                                   
                                 
@@ -293,20 +302,16 @@ struct page6: View {
                                 Button(action: {
                                     
                                 }) {
-                                    Image(systemName: "note.text").imageScale(.large)
+                                    Image(systemName: "note.text")
+                                        .frame(width: 50.0, height: 50.0)
+                                        .imageScale(.large)
                                         .foregroundColor(.white)
-                                        .padding()
+                                        .padding(.bottom, 150.0)
                                 }
                                 Spacer()
                             }
                             .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 55)
-                                    .fill(Color(red: 42/255, green: 59/255, blue: 89/255))
-                            )
-                            .frame(width: 370, height: 50)
-                            
-                            
+                       
                             
                             
                             

@@ -250,7 +250,7 @@ struct page3: View {
                                 Image(systemName: "house.fill")
                                     .foregroundColor(.white)
                                     .padding(.top, -7.0)
-                                    .frame(width: 40.0, height: 40.0)
+                                    .frame(width: 50.0, height: 50.0)
                             }
                             Spacer()
                             
@@ -260,7 +260,7 @@ struct page3: View {
                                 Image(systemName: "heart")
                                     .foregroundColor(.white)
                                     .padding(.top, -3.0)
-                                    .frame(width: 40.0, height: 40.0)
+                                    .frame(width: 40.0, height: 50.0)
                                 
                                 
                             }
@@ -274,7 +274,7 @@ struct page3: View {
                             Spacer()
                             
                             
-                            NavigationLink{page5()}label: {
+                            NavigationLink{page6()}label: {
                                 Image(systemName: "note.text")
                                     .foregroundColor(.white)
                                     .padding(.top, -3.0)
