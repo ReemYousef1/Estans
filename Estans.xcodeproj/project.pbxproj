@@ -46,14 +46,14 @@
 /* Begin PBXFileReference section */
 		291DDC5D2CB3DEA500C3039C /* page9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page9.swift; sourceTree = "<group>"; };
 		2B53808E2CB5380A0077A770 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
-		2BB650122CB3C9F000BF1578 /* repo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = repo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB650122CB3C9F000BF1578 /* Estans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB650152CB3C9F000BF1578 /* repo2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2App.swift; sourceTree = "<group>"; };
 		2BB650172CB3C9F000BF1578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BB650192CB3C9F100BF1578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB6501C2CB3C9F100BF1578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2BB650222CB3C9F100BF1578 /* repo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = repo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB650222CB3C9F100BF1578 /* EstansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EstansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB650262CB3C9F100BF1578 /* repo2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2Tests.swift; sourceTree = "<group>"; };
-		2BB6502C2CB3C9F100BF1578 /* repo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = repo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB6502C2CB3C9F100BF1578 /* EstansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EstansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB650302CB3C9F100BF1578 /* repo2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2UITests.swift; sourceTree = "<group>"; };
 		2BB650322CB3C9F100BF1578 /* repo2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repo2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2BB650412CB3CA6E00BF1578 /* page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page4.swift; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 		2BB650132CB3C9F000BF1578 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BB650122CB3C9F000BF1578 /* repo2.app */,
-				2BB650222CB3C9F100BF1578 /* repo2Tests.xctest */,
-				2BB6502C2CB3C9F100BF1578 /* repo2UITests.xctest */,
+				2BB650122CB3C9F000BF1578 /* Estans.app */,
+				2BB650222CB3C9F100BF1578 /* EstansTests.xctest */,
+				2BB6502C2CB3C9F100BF1578 /* EstansUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BB650112CB3C9F000BF1578 /* repo2 */ = {
+		2BB650112CB3C9F000BF1578 /* Estans */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BB650362CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "repo2" */;
+			buildConfigurationList = 2BB650362CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "Estans" */;
 			buildPhases = (
 				2BB6500E2CB3C9F000BF1578 /* Sources */,
 				2BB6500F2CB3C9F000BF1578 /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = repo2;
+			name = Estans;
 			productName = repo2;
-			productReference = 2BB650122CB3C9F000BF1578 /* repo2.app */;
+			productReference = 2BB650122CB3C9F000BF1578 /* Estans.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BB650212CB3C9F100BF1578 /* repo2Tests */ = {
+		2BB650212CB3C9F100BF1578 /* EstansTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BB650392CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "repo2Tests" */;
+			buildConfigurationList = 2BB650392CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "EstansTests" */;
 			buildPhases = (
 				2BB6501E2CB3C9F100BF1578 /* Sources */,
 				2BB6501F2CB3C9F100BF1578 /* Frameworks */,
@@ -190,14 +190,14 @@
 			dependencies = (
 				2BB650242CB3C9F100BF1578 /* PBXTargetDependency */,
 			);
-			name = repo2Tests;
+			name = EstansTests;
 			productName = repo2Tests;
-			productReference = 2BB650222CB3C9F100BF1578 /* repo2Tests.xctest */;
+			productReference = 2BB650222CB3C9F100BF1578 /* EstansTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2BB6502B2CB3C9F100BF1578 /* repo2UITests */ = {
+		2BB6502B2CB3C9F100BF1578 /* EstansUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BB6503C2CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "repo2UITests" */;
+			buildConfigurationList = 2BB6503C2CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "EstansUITests" */;
 			buildPhases = (
 				2BB650282CB3C9F100BF1578 /* Sources */,
 				2BB650292CB3C9F100BF1578 /* Frameworks */,
@@ -208,9 +208,9 @@
 			dependencies = (
 				2BB6502E2CB3C9F100BF1578 /* PBXTargetDependency */,
 			);
-			name = repo2UITests;
+			name = EstansUITests;
 			productName = repo2UITests;
-			productReference = 2BB6502C2CB3C9F100BF1578 /* repo2UITests.xctest */;
+			productReference = 2BB6502C2CB3C9F100BF1578 /* EstansUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BB6500D2CB3C9F000BF1578 /* Build configuration list for PBXProject "repo2" */;
+			buildConfigurationList = 2BB6500D2CB3C9F000BF1578 /* Build configuration list for PBXProject "Estans" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -249,9 +249,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BB650112CB3C9F000BF1578 /* repo2 */,
-				2BB650212CB3C9F100BF1578 /* repo2Tests */,
-				2BB6502B2CB3C9F100BF1578 /* repo2UITests */,
+				2BB650112CB3C9F000BF1578 /* Estans */,
+				2BB650212CB3C9F100BF1578 /* EstansTests */,
+				2BB6502B2CB3C9F100BF1578 /* EstansUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,12 +324,12 @@
 /* Begin PBXTargetDependency section */
 		2BB650242CB3C9F100BF1578 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2BB650112CB3C9F000BF1578 /* repo2 */;
+			target = 2BB650112CB3C9F000BF1578 /* Estans */;
 			targetProxy = 2BB650232CB3C9F100BF1578 /* PBXContainerItemProxy */;
 		};
 		2BB6502E2CB3C9F100BF1578 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2BB650112CB3C9F000BF1578 /* repo2 */;
+			target = 2BB650112CB3C9F000BF1578 /* Estans */;
 			targetProxy = 2BB6502D2CB3C9F100BF1578 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -528,7 +528,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/repo2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/repo2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Estans.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Estans";
 			};
 			name = Debug;
 		};
@@ -548,7 +548,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/repo2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/repo2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Estans.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Estans";
 			};
 			name = Release;
 		};
@@ -591,7 +591,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BB6500D2CB3C9F000BF1578 /* Build configuration list for PBXProject "repo2" */ = {
+		2BB6500D2CB3C9F000BF1578 /* Build configuration list for PBXProject "Estans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BB650342CB3C9F100BF1578 /* Debug */,
@@ -600,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BB650362CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "repo2" */ = {
+		2BB650362CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "Estans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BB650372CB3C9F100BF1578 /* Debug */,
@@ -609,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BB650392CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "repo2Tests" */ = {
+		2BB650392CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "EstansTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BB6503A2CB3C9F100BF1578 /* Debug */,
@@ -618,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BB6503C2CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "repo2UITests" */ = {
+		2BB6503C2CB3C9F100BF1578 /* Build configuration list for PBXNativeTarget "EstansUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BB6503D2CB3C9F100BF1578 /* Debug */,
