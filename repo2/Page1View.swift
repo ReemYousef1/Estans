@@ -25,38 +25,35 @@ struct Page1View: View {
                 
                 
                 VStack{
+                    
                     Image("logo")
-                        .padding(0)
-                    
-                    
+                        .resizable(capInsets: EdgeInsets(top: 0.0, leading: 23.0, bottom: 0.0, trailing: 7.0))        .scaledToFit()                  .frame(width: 223.0, height: 200)                .padding(.top, 51.0)
                     Text("استَأنِسْ")
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Color(hex: "#0F2C59"))
-                        .padding(.bottom,20)
-                        .font(.system(size: 25))
-                    
-                    Text("داوي روحك وأحيي مشاعرك بسحر الشعر")
-                        .foregroundColor(.gray)
-                    
-                        .padding(.bottom,80)
-                    
-                        NavigationLink{
-                            Page2()
-                        }label:{
+                                           .fontWeight(.bold)
+                                           .foregroundColor(Color(hex: "#0F2C59"))
+                                           .padding(.bottom, 20)
+                                           .font(.system(size: 25))
+                                       
+                                       Text("داوي روحك وأحيي مشاعرك بسحر الشعر")
+                                           .foregroundColor(.gray)
+                                           .padding(.bottom, 80)
+                                           .multilineTextAlignment(.center)
+                    NavigationLink{
+                        Page2()
+                    }label:{
+                        
+                        ZStack{
+                            Capsule()
+                                .fill(Color(red:42/255, green: 59/255, blue: 85/255))
+                                .frame(width: 90, height: 50)
                             
-                            //zstack
-                            ZStack{
-                                Capsule()
-                                    .fill(Color(red:42/255, green: 59/255, blue: 85/255))
-                                    .frame(width: 90, height: 50)
-                                
-                                Text("التالي")
-                                
-                                    .font(.system(size: 16))
-                                    .foregroundColor(.white)
-                            }
-                            //
+                            Text("التالي")
+                            
+                                .font(.system(size: 16))
+                                .foregroundColor(.white)
                         }
+                    
+                    }
                     
                     
                     
