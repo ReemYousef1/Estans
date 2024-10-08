@@ -1,126 +1,128 @@
 import SwiftUI
 
 struct page4: View {
+    @State private var showPage3 = false
     var body: some View {
-        VStack {
-            // Header
-            Spacer(minLength: 70)
-            Text("قد تكون مهتم بـ")
-                .font(.system(size: 25))
-                .fontWeight(.semibold)
-                .frame(maxWidth: 200, alignment: .trailing)
-                .padding(.leading, 123.0)
-            Spacer(minLength: 10)
-            Text("التصنيفات")
-                .padding(.leading, 246.0)
-            Text(" ")
-
-                .fontWeight(.regular)
-                .padding(.leading, 256.0)
-                .frame(width: -10.0, height: -10.0)
-            
-            ScrollViewReader { scrollViewProxy in
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 12) {
-                        // Category buttons with actions
-                        CustomCategoryButton(title: "قصائد صبر", action: {
-                            print("قصائد صبر button clicked")
-                        })
-                        .id(4)  // "قصائد صبر" button
+        NavigationView {
+            VStack {
+                // Header
+                Spacer(minLength: 70)
+                Text("قد تكون مهتم بـ")
+                    .font(.system(size: 25))
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: 200, alignment: .trailing)
+                    .padding(.leading, 123.0)
+                Spacer(minLength: 10)
+                Text("التصنيفات")
+                    .padding(.leading, 246.0)
+                Text(" ")
+                
+                    .fontWeight(.regular)
+                    .padding(.leading, 256.0)
+                    .frame(width: -10.0, height: -10.0)
+                
+                ScrollViewReader { scrollViewProxy in
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 12) {
+                            // Category buttons with actions
+                            CustomCategoryButton(title: "قصائد صبر", action: {
+                                print("قصائد صبر button clicked")
+                            })
+                            .id(4)  // "قصائد صبر" button
+                            
+                            CustomCategoryButton(title: "قصائد الزهد", action: {
+                                print("قصائد الزهد button clicked")
+                            })
+                            .id(0)
+                            
+                            CustomCategoryButton(title: "قصائد عامة", action: {
+                                print("قصائد عامة button clicked")
+                            })
+                            .id(1)
+                            
+                            CustomCategoryButton(title: "قصائد المفاتن", action: {
+                                print("قصائد المفاتن button clicked")
+                            })
+                            .id(2)
+                            
+                            CustomCategoryButton(title: "قصائد الهجاء", action: {
+                                print("قصائد الهجاء button clicked")
+                            })
+                            .id(3)
+                        }
+                        .padding(.horizontal)
+                    }
+                    .onAppear {
+                        // Scroll to "قصائد صبر" when the view appears
+                        scrollViewProxy.scrollTo(3, anchor: .leading) // Change this to match the ID of "قصائد صبر"
+                    }
+                }
+                .padding(.bottom, 10)
+                
+                // Poems
+                Text("   ")
+                    .frame(width: -6.0, height: -7.0)
+                ScrollView {
+                    VStack(spacing: 15) {
+                        //                    PoemView(title: "أنشودة المطر", excerpt: "عيناك غابتا نخيل عيناكِ غابتا نخيلٍ ساعةَ السحَر، أو شُرفتان راحَ ينأى عنهما القمر……", imageName: "im5"){                      print("يعيش المرء clicked")}
+                        PoemView(
+                            title: "أنشودة المطر",
+                            excerpt: "عيناك غابتا نخيل عيناكِ غابتا نخيلٍ ساعةَ السحَر، أو شُرفتان راحَ ينأى عنهما القمر……",
+                            imageName: "im5",
+                            action: {
+                                print("أنشودة المطر clicked")
+                            },
+                            moreAction: {
+                                print("اقرأ المزيد for أنشودة المطر clicked")
+                            }
+                        )
                         
-                        CustomCategoryButton(title: "قصائد الزهد", action: {
-                            print("قصائد الزهد button clicked")
-                        })
-                        .id(0)
+                        PoemView(
+                            title: "يعيش المرء",
+                            excerpt: "يَعيشُ المَرءُ ما اِستَحيا بِخَيرٍ وَيَبقى العودُ ما بَقِيَ اللِحاءُ إِذا لَم تَخشَ عاقِبَةَ اللَيالي وَلَم تَستَحيِ فَاِفعَل ما تَشاءُ",
+                            imageName: "im4",
+                            action: {
+                                print("يعيش المرء clicked")
+                            },
+                            moreAction: {
+                                print("اقرأ المزيد for يعيش المرء clicked")
+                            }
+                        )
                         
-                        CustomCategoryButton(title: "قصائد عامة", action: {
-                            print("قصائد عامة button clicked")
-                        })
-                        .id(1)
+                        PoemView(
+                            title: "رأيت القناعة",
+                            excerpt: "رَأيْتُ القنَاعَة َ رَأْسَ الغنَى فصِرتُ بأَذْيَالِهَا مُمْتَسِكْ فلا ذا يراني على بابهِ وَلا ذا يَرَاني بهِ مُنْهمِكْ",
+                            imageName: "im3",
+                            action: {
+                                print("رأيت القناعة clicked")
+                            },
+                            moreAction: {
+                                print("اقرأ المزيد for رأيت القناعة clicked")
+                            }
+                        )
                         
-                        CustomCategoryButton(title: "قصائد المفاتن", action: {
-                            print("قصائد المفاتن button clicked")
-                        })
-                        .id(2)
+                        PoemView(
+                            title: "دع الأيام",
+                            
+                            excerpt:
+                                "دَعِ الأَيّامَ تَفعَلُ ما تَشاءُ وَطِب نَفساً إِذا حَكَمَ القَضاءُ وَلا تَجزَع لِحادِثَةِ اللَيالي فَما لِحَوادِثِ الدُنيا بَقاءُ",
+                            imageName: "im1",
+                            action: {
+                                print("دع الأيام clicked")
+                            },
+                            moreAction: {
+                                print("اقرأ المزيد for دع الأيام clicked")
+                            }
+                        )
+                        .padding(.leading, 0) // Adjust leading padding
+                        .frame(width: 350, height: 100) // Fixed frame for the entire PoemView
                         
-                        CustomCategoryButton(title: "قصائد الهجاء", action: {
-                            print("قصائد الهجاء button clicked")
-                        })
-                        .id(3)
                     }
                     .padding(.horizontal)
                 }
-                .onAppear {
-                    // Scroll to "قصائد صبر" when the view appears
-                    scrollViewProxy.scrollTo(3, anchor: .leading) // Change this to match the ID of "قصائد صبر"
-                }
+                //            .background(Color(hex: "#E6EAF0"))
+                .edgesIgnoringSafeArea(.all)
             }
-            .padding(.bottom, 10)
-            
-            // Poems
-            Text("   ")
-                .frame(width: -6.0, height: -7.0)
-            ScrollView {
-                VStack(spacing: 15) {
-//                    PoemView(title: "أنشودة المطر", excerpt: "عيناك غابتا نخيل عيناكِ غابتا نخيلٍ ساعةَ السحَر، أو شُرفتان راحَ ينأى عنهما القمر……", imageName: "im5"){                      print("يعيش المرء clicked")}
-                    PoemView(
-                                   title: "أنشودة المطر",
-                                   excerpt: "عيناك غابتا نخيل عيناكِ غابتا نخيلٍ ساعةَ السحَر، أو شُرفتان راحَ ينأى عنهما القمر……",
-                                   imageName: "im5",
-                                   action: {
-                                       print("أنشودة المطر clicked")
-                                   },
-                                   moreAction: {
-                                       print("اقرأ المزيد for أنشودة المطر clicked")
-                                   }
-                               )
-                               
-                               PoemView(
-                                   title: "يعيش المرء",
-                                   excerpt: "يَعيشُ المَرءُ ما اِستَحيا بِخَيرٍ وَيَبقى العودُ ما بَقِيَ اللِحاءُ إِذا لَم تَخشَ عاقِبَةَ اللَيالي وَلَم تَستَحيِ فَاِفعَل ما تَشاءُ",
-                                   imageName: "im4",
-                                   action: {
-                                       print("يعيش المرء clicked")
-                                   },
-                                   moreAction: {
-                                       print("اقرأ المزيد for يعيش المرء clicked")
-                                   }
-                               )
-                               
-                               PoemView(
-                                   title: "رأيت القناعة",
-                                   excerpt: "رَأيْتُ القنَاعَة َ رَأْسَ الغنَى فصِرتُ بأَذْيَالِهَا مُمْتَسِكْ فلا ذا يراني على بابهِ وَلا ذا يَرَاني بهِ مُنْهمِكْ",
-                                   imageName: "im3",
-                                   action: {
-                                       print("رأيت القناعة clicked")
-                                   },
-                                   moreAction: {
-                                       print("اقرأ المزيد for رأيت القناعة clicked")
-                                   }
-                               )
-                               
-                               PoemView(
-                                   title: "دع الأيام",
-                                   
-                                   excerpt:
-                                    "دَعِ الأَيّامَ تَفعَلُ ما تَشاءُ وَطِب نَفساً إِذا حَكَمَ القَضاءُ وَلا تَجزَع لِحادِثَةِ اللَيالي فَما لِحَوادِثِ الدُنيا بَقاءُ",
-                                   imageName: "im1",
-                                   action: {
-                                       print("دع الأيام clicked")
-                                   },
-                                   moreAction: {
-                                       print("اقرأ المزيد for دع الأيام clicked")
-                                   }
-                               )
-                    .padding(.leading, 0) // Adjust leading padding
-                    .frame(width: 350, height: 100) // Fixed frame for the entire PoemView
-
-                }
-                .padding(.horizontal)
-            }
-//            .background(Color(hex: "#E6EAF0"))
-            .edgesIgnoringSafeArea(.all)
-
             //tab bar
 
                                       VStack {
@@ -203,15 +205,16 @@ struct PoemView: View {
             Button(action: {
                 moreAction() // Action for "اقرأ المزيد" button
             }) {
-                Text("اقرأ المزيد")
-                    .font(.system(size: 13))
-                    .fontWeight(.medium)
-                    .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 5)
-                    .background(Color.white.opacity(0.23))
-                    .cornerRadius(8)
-            }
+                NavigationLink(destination: page9()) {
+                    Text("اقرأ المزيد")
+                        .font(.system(size: 13))
+                        .fontWeight(.medium)
+                        .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color.white.opacity(0.23))
+                        .cornerRadius(8)
+                }}
             .padding(.leading, 8)
 
             Spacer() // Adds space between the button and the text

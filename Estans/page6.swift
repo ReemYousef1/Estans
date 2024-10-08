@@ -80,7 +80,7 @@ struct page6: View {
                         //HStack of rectangle
                         HStack{
                             //button
-                            NavigationLink{page9()}label: {
+                            NavigationLink{page10()}label: {
                                 Text("اقرأ المزيد")
                                     .foregroundColor(Color(hue: 0.875, saturation: 0.033, brightness: 0.966, opacity: 0.787))
                                     

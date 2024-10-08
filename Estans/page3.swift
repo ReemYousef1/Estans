@@ -139,7 +139,7 @@ struct page3: View {
                             .frame(width: 1.0, height: 13.0)
 
                             HStack{
-                                NavigationLink{page4()}label: {
+                                NavigationLink(destination: page4()) {
                                     Text("أظهار الكل")
                                         .fontWeight(.thin)
                                         .foregroundColor(.gray)
