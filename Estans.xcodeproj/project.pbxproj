@@ -94,7 +94,7 @@
 		2BB650092CB3C9F000BF1578 = {
 			isa = PBXGroup;
 			children = (
-				2BB650142CB3C9F000BF1578 /* Estanis */,
+				2BB650142CB3C9F000BF1578 /* Estans */,
 				2BB650252CB3C9F100BF1578 /* repo2Tests */,
 				2BB6502F2CB3C9F100BF1578 /* repo2UITests */,
 				2BB650132CB3C9F000BF1578 /* Products */,
@@ -111,7 +111,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BB650142CB3C9F000BF1578 /* Estanis */ = {
+		2BB650142CB3C9F000BF1578 /* Estans */ = {
 			isa = PBXGroup;
 			children = (
 				291DDC5D2CB3DEA500C3039C /* page9.swift */,
@@ -129,7 +129,7 @@
 				2BB650192CB3C9F100BF1578 /* Assets.xcassets */,
 				2BB6501B2CB3C9F100BF1578 /* Preview Content */,
 			);
-			path = Estanis;
+			path = Estans;
 			sourceTree = "<group>";
 		};
 		2BB6501B2CB3C9F100BF1578 /* Preview Content */ = {
@@ -461,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"repo2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Estans/Preview Content\"";
 				DEVELOPMENT_TEAM = J565QX476U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -490,7 +490,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"repo2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Estans/Preview Content\"";
 				DEVELOPMENT_TEAM = J565QX476U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

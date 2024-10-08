@@ -5,7 +5,7 @@ struct Page2: View {
     @State private var selectedCategories: Set<String> = [] // To track selected categories
     
     let categories = [
-        ["النزل", "الحكمة"],
+        ["الغزل", "الحكمة"],
         ["الرثاء", "الشعر الوجداني"],
         ["الهجاء", "الشعر الحداثي"],
         ["المديح"]
