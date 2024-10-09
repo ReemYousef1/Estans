@@ -12,76 +12,74 @@ struct Page2: View {
     ]
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                // Background with blurry circles
-                BackgroundView()
+        ZStack {
+            // Background with blurry circles
+            BackgroundView()
+            
+            // Main content
+            VStack(spacing: 40) {
                 
-                // Main content
-                VStack(spacing: 40) {
-                    
-                    // Welcome message with dynamic name input
-                    if !userName.isEmpty {
-                        Text("مرحبًا \(userName) ...")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                    } else {
-                        Text("مرحبًا")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                    }
-                    
-                    // Name input field
-                    TextField("اكتب اسمك هنا", text: $userName)
-                        .font(.title2)
+                // Welcome message with dynamic name input
+                if !userName.isEmpty {
+                    Text("مرحبًا \(userName) ...")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .padding()
-                        .cornerRadius(10)
-                        .padding(.horizontal)
-                    
-                    // Question prompt
-                    Text("ما هو تصنيف الشعر الذي تفضله ؟")
-                        .font(.title2)
+                } else {
+                    Text("مرحبًا")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal)
-                    
-                    // Poetry Categories
-                    VStack(spacing: 20) {
-                        ForEach(categories, id: \.self) { row in
-                            HStack(spacing: 15) {
-                                ForEach(row, id: \.self) { category in
-                                    CategoryButtonn(
-                                        title: category,
-                                        isSelected: selectedCategories.contains(category),
-                                        action: {
-                                            toggleCategory(category)
-                                        }
-                                    )
-                                }
+                }
+                
+                // Name input field
+                TextField("اكتب اسمك هنا", text: $userName)
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .cornerRadius(10)
+                    .padding(.horizontal)
+                
+                // Question prompt
+                Text("ما هو تصنيف الشعر الذي تفضله ؟")
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                
+                // Poetry Categories
+                VStack(spacing: 20) {
+                    ForEach(categories, id: \.self) { row in
+                        HStack(spacing: 15) {
+                            ForEach(row, id: \.self) { category in
+                                CategoryButtonn(
+                                    title: category,
+                                    isSelected: selectedCategories.contains(category),
+                                    action: {
+                                        toggleCategory(category)
+                                    }
+                                )
                             }
                         }
                     }
-                    
-                    // Start button
-                    
-                    NavigationLink(destination: page3()) {
-                        Text("إبدأ")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color(hex: "#2A3B55")) // Custom color here
-                            .cornerRadius(10)
-                    }
-                    .padding(.horizontal)
                 }
-                .padding()
-            }}
-            .edgesIgnoringSafeArea(.all) // Extend background to edges
+                
+                // Start button with direct navigation to Page3
+                NavigationLink(destination: page3()) {  // Direct reference to Page3
+                    Text("إبدأ")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color(hex: "#2A3B55"))
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal)
+            }
+            .padding()
         }
+        .edgesIgnoringSafeArea(.all)
+    }
     
     // Toggle the selection of a category
     private func toggleCategory(_ category: String) {
@@ -124,7 +122,6 @@ struct CategoryButtonn: View {
     var action: () -> Void
     
     var body: some View {
-    
         Button(action: {
             action()
         }) {
@@ -136,11 +133,9 @@ struct CategoryButtonn: View {
                 .background(isSelected ? Color(hex: "#4F6485").opacity(0.8) : Color(hex: "#4F6485"))
                 .cornerRadius(40)
         }
-        //.navigationTitle("page 2")
     }
-    
 }
-   
+
 #Preview {
     Page2()
 }

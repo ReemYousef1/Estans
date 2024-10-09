@@ -241,11 +241,12 @@
 			};
 			buildConfigurationList = 2BB6500D2CB3C9F000BF1578 /* Build configuration list for PBXProject "Estans" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ar;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 2BB650092CB3C9F000BF1578;
 			productRefGroup = 2BB650132CB3C9F000BF1578 /* Products */;

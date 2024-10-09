@@ -3,7 +3,7 @@ import SwiftUI
 struct page4: View {
     @State private var showPage3 = false
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 // Header
                 Spacer(minLength: 70)
@@ -122,7 +122,7 @@ struct page4: View {
                 }
                 //            .background(Color(hex: "#E6EAF0"))
                 .edgesIgnoringSafeArea(.all)
-            }
+//            }
             //tab bar
 
                                       VStack {
